@@ -1,16 +1,20 @@
 package CalculadoraDeDescontos;
 
 public class CalculadoraDescontos {
-    System.out.println ("======================");
-    Double precoProduto = 115.O;
-    System.out.println("O preço do produto é " + Double precoProduto + " reais " );
-    Double percentualDesconto = 10.0;
-    System.out.println("O desconto será de" + percentualDesconto + "% ");
-    Double desconto = precoProduto * percentualDesconto /100;
-    double precoComDesconto = precoProduto - desconto;
-    System.out.println ("Com desconto, o produto sai" + "por R$" + precoComDesconto + ".");
-System.out.println("Fim!");
-System.out.println ("===========================")
-
-
+    public void calcula20() {
+    double precoProduto;
+    precoProduto = 200;
+    int desconto = 20;
+    double precoComDesconto = precoProduto - (precoProduto*desconto/100);
+    System.out.println ("O valor do produto com desconto é " + precoComDesconto + " Reais");
+}
+public void calcula30() {
+    double precoProduto;
+    precoProduto = 200;
+    int desconto = 30;
+    double precoComDesconto = precoProduto - (precoProduto*desconto/100);
+    System.out.println ("O valor do produto com desconto é " + precoComDesconto + " Reais");
+    
+    
+}
 }
