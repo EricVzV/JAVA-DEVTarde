@@ -1,0 +1,87 @@
+06/02/2023
+
+
+JAVA:
+
+-Java funciona se baseando em classes;
+------------------------------------------------------------------------------------------------
+CRIAÇÃO DE VARIÁVEL:
+
+int = Tipo inteiro
+float = Numeros que aceitam vírgula
+
+------------------------------------------------------------------------------------------------
+ESCRITA:
+
+- distanciaPercorrida= obterinformacaoDoUsuario();
+- primeira letra sempre minuscula, mas a cada nova palavra a primeira letra é Maiuscula;
+------------------------------------------------------------------------------------------------
+CODIGO CALCULADORA VELOC. MED.:
+
+package VelocidadeMedia;
+
+public class CalcVelocMed 
+{
+    public static void main(String[] args) 
+    {
+    System.out.println("===Calculadora de veloc. Med.===");
+    int distanciaPercorrida = 150;
+    int tempoGasto = 2; 
+    float velocidadeMedia = distanciaPercorrida/tempoGasto;
+    System.out.println("A veloc.Med. foi de:");
+    System.out.println(velocidadeMedia+"km/h");
+    }
+}
+----------------------------------------------------------------------------------------------
+ATIVIDADE CAL.GASTO DE VIAGEM:
+
+DEVE CONTER:
+
+Algoritomo:
+
+- Obter distância - em quilometros - de posição inicial e posição final;
+- Obter tempo medio - em horas - de posição inicial e posição final;
+- Obter consumo do carro - e km/l;
+- Obter preço da gasolina - em reais;
+- Obter custo de pedágio - em reais;
+- Dividir a distancia/consumodocarro;
+- Multiplica a o resultado*preçodagaso;
+- Soma o resultado+Custopedagio;
+- Exibir o resultado e o tempo gasto;
+
+Pseudocod- 
+
+- distanciaPiPf = obterInformacaoDoUsuario();
+- tempoPiPf = obterInformacaoDoUsuario();
+- consumoMedCarro = obterInformacaoDoUsuario();
+- preçoDaGaso = obterInformacaoDoUsuario();
+- custoPedagio = obterInformacaoDoUsuario();
+- gasoUsada = distanciaPiPf/consumoMedCarro;
+- custoGaso= gasoUsada*preçoDaGaso;
+- custoFinal = custoGaso+custoPedagio;
+- exibirResultadoParaUsuario(custoFinal);
+- exibirResultadoParaUsuario(tempoPiPf);
+
+CodEmJava-
+package CalcGastoViagem;
+
+public class CalcGastoViagem
+{
+    public static void main(String[] args)
+    {  
+        System.out.println("===Calculadora de Custo de Viagem===");
+        int distanciaPiPf = 300;
+        int tempoPiPf = 3;
+        float consumoMedCarro = 10.8f;
+        float preçoDaGaso = 5.50f;
+        float custoPedagio = 52.5f;
+        float gasoUsada = distanciaPiPf/consumoMedCarro;
+        float custoGaso = gasoUsada*preçoDaGaso;
+        float custoFinal = custoGaso+custoPedagio;
+        System.out.println("Distancia Percorrida= "+ distanciaPiPf+" km/h");
+        System.out.println("Tempo gasto= " + tempoPiPf + " horas");
+        System.out.println("Custo final= " + custoFinal+ " reais");
+        
+
+    }
+}
